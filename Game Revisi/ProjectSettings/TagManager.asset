@@ -9,6 +9,9 @@ TagManager:
   - Enemy
   - BulletEnemy
   - Batas
+  - PHSmall
+  - PHBig
+  - HealthPlayer
   layers:
   - Default
   - TransparentFX

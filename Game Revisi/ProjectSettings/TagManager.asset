@@ -12,6 +12,7 @@ TagManager:
   - PHSmall
   - PHBig
   - HealthPlayer
+  - Hugo
   layers:
   - Default
   - TransparentFX

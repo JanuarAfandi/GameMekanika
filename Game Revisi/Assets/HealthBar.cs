@@ -34,7 +34,7 @@ public class HealthBar : MonoBehaviour
     { 
         if (slider.value <= 0)
         {
-      //      Destroy(this.gameObject);
+            WinLoseCondition.lose = true;
         }
 
         if(slider.value > 1)

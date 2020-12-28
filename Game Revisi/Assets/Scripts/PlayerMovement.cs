@@ -59,21 +59,34 @@ public class PlayerMovement : MonoBehaviour
 
         if ((CrossPlatformInputManager.GetButtonDown("Jump") || joystick.Vertical > 0.5) && isGround)
         {
+            print("JUmp");
             rigid.velocity = Vector2.zero;
             rigid.AddForce(Vector2.up * jump);
         }
+
+        print(isGround);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if(collision.gameObject.tag == "Ground" || collision.gameObject.name == "Jalan")
         {
+            print("Ground");
             isGround = true;
         }
 
         if(collision.gameObject.tag == "BulletEnemy")
         {
             health -= 10;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.name == "Jalan")
+        {
+            print("Ground");
+            isGround = true;
         }
     }
 

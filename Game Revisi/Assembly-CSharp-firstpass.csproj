@@ -251,17 +251,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-<<<<<<< HEAD
-        <HintPath>D:/Fandi&apos;s File/Programs/2019.4.13f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-        <HintPath>D:/Fandi&apos;s File/Unity project/Game Revisi/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-        <HintPath>D:/Fandi&apos;s File/Programs/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-=======
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/2019.4.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
->>>>>>> 40afdd502315a202f1fe08b957f1e0b54472620a
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>E:/Mk Fandi/GameMekanika/Game Revisi/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>

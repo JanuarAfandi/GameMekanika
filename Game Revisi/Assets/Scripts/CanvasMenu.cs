@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class CanvasMenu : MonoBehaviour
 {
-    public GameObject panelWin, panelLose;
+    public static bool isPause;
+    public GameObject panelWin, panelLose, panelPause;
     void Start()
     {
+        isPause = false;
         Time.timeScale = 1f;
         panelWin.SetActive(false);
         panelLose.SetActive(false);
+        panelPause.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,4 +48,17 @@ public class CanvasMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Pause()
+    {
+        isPause = true;
+        panelPause.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        isPause = false;
+        panelPause.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }

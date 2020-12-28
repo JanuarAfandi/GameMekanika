@@ -8,6 +8,8 @@ public class EnemyScript : MonoBehaviour
     float timer;
     int health = 70;
 
+    bool shoot;
+
     public static float scaleX;
 
     public GameObject player;
@@ -24,7 +26,8 @@ public class EnemyScript : MonoBehaviour
         timer += Time.deltaTime;
         if (player != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0.01f);
+            if(!CanvasMenu.isPause)
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 0.01f);
 
             if (transform.position.x < player.transform.position.x)
             {
@@ -40,7 +43,16 @@ public class EnemyScript : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
             }
 
-            if (timer > 1f)
+            if(Mathf.Abs(transform.position.x - player.transform.position.x) < 10f)
+            {
+                shoot = true;
+            }
+            else
+            {
+                shoot = false;
+            }
+
+            if (timer > 1f && shoot)
             {
                 Instantiate(bullet, childShoot.transform.position, Quaternion.identity);
                 timer = 0f;

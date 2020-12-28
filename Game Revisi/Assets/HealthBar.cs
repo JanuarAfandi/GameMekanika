@@ -6,34 +6,40 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
-    public int health, HealthLimit;
+    public static int health;
+    public int HealthLimit;
     void Start()
     {
+        slider = GameObject.FindWithTag("HealthPlayer").GetComponent<Slider>();
         health = HealthLimit;
+        slider.value = 1;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        slider.minValue = 0;
-        slider.maxValue = HealthLimit;
-        slider.value = health;
+    {   
         HealthControl();
+        print(slider.value);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "BulletEnemy")
+        if(collision.gameObject.tag == "BulletEnemy" && !ItemPlayer.shieldActive)
         {
-            health -= 10;
+            slider.value -= 0.1f;
         }
     }
 
     private void HealthControl()
-    {
-        if (health <= 0)
+    { 
+        if (slider.value <= 0)
         {
-            Destroy(this.gameObject);
+            WinLoseCondition.lose = true;
+        }
+
+        if(slider.value > 1)
+        {
+            slider.value = 0.1f;
         }
     }
 }

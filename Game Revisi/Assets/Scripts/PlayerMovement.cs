@@ -33,11 +33,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if(health <= 0)
-        {
-           Destroy(gameObject);
-        }
-
         //for joystick
         //dirXJoystick = joystick.Horizontal;
        // transform.Translate(new Vector2(dirXJoystick * speed * Time.deltaTime, 0f));

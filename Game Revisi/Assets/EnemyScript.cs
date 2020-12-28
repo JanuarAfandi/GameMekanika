@@ -48,7 +48,7 @@ public class EnemyScript : MonoBehaviour
 
             if (health <= 0)
             {
-                Destroy(gameObject);
+             //   Destroy(gameObject);
             }
         }
     }
@@ -57,7 +57,7 @@ public class EnemyScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "BulletPlayer")
         {
-            health -= 10;
+           // health -= 10;
         }
     }
 

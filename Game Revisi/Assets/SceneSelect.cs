@@ -10,8 +10,8 @@ public class SceneSelect : MonoBehaviour
            case "Start":
                 SceneManager.LoadScene ("InGame");
                 break;
-           case "Settings":
-                SceneManager.LoadScene ("Settings");
+           case "How To Play":
+                SceneManager.LoadScene ("HowToPlay");
                 break;
             case "Credits":
                 SceneManager.LoadScene ("Credits");

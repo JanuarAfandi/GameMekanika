@@ -36,9 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\BackButton.cs" />
      <Compile Include="Assets\Buttoncontrol.cs" />
+     <Compile Include="Assets\Darkboss.cs" />
      <Compile Include="Assets\EnemyBehaviour.cs" />
      <Compile Include="Assets\EnemyScript.cs" />
+     <Compile Include="Assets\EnemyScript2.cs" />
+     <Compile Include="Assets\ExitButton.cs" />
      <Compile Include="Assets\HealthBar.cs" />
      <Compile Include="Assets\HealthBarBehaviour.cs" />
      <Compile Include="Assets\HealthBarEnemy.cs" />
@@ -55,8 +59,15 @@
      <Compile Include="Assets\SceneSelect.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\BulletEnemy.cs" />
+     <Compile Include="Assets\Scripts\CanvasMenu.cs" />
+     <Compile Include="Assets\Scripts\DataItem.cs" />
+     <Compile Include="Assets\Scripts\ItemPlayer.cs" />
+     <Compile Include="Assets\Scripts\PHBig.cs" />
+     <Compile Include="Assets\Scripts\PHSmall.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Shield.cs" />
      <Compile Include="Assets\Tembak.cs" />
+     <Compile Include="Assets\WinLoseCondition.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Fandi&apos;s File/Programs/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

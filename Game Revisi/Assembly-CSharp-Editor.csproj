@@ -248,7 +248,7 @@
         <HintPath>D:/Fandi&apos;s File/Programs/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:/Fandi&apos;s File/Unity project/Game Revisi/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>D:/Fandi&apos;s File/Unity project/Game Revisi/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>D:/Fandi&apos;s File/Programs/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -702,17 +702,14 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{d0a85816-68ae-717f-febe-d5ebdf32cc8d}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{1a9ab8a3-b77a-eaff-8de0-207b37183246}</Project>
       <Name>Assembly-CSharp</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
       <Project>{df8188c8-0711-c53f-61ce-4496d2b1d284}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
